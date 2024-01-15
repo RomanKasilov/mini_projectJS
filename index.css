@@ -1,0 +1,12 @@
+.flex{
+    display: flex;
+    justify-content: center;
+
+}
+.wrapper{}
+.user {
+    width: 40vw;
+    border: 2px solid aqua;
+}
+p{}
+button{}
