@@ -1,3 +1,38 @@
-.wrapper{}
-.post_div{}
-.comment_div{}
+.wrapper{
+
+}
+.posts_wrapper{
+    border-bottom: 5px solid #18c0f3;
+}
+/*.post_div{}*/
+.comments_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px;
+}
+.comment_div {
+    padding: 15px;
+width: 22vw;
+    border: 5px solid #056785;
+border-radius: 20px;
+}
+
+.comment_div  p:nth-child(1) {
+    font-weight: bold;
+}
+
+.comment_div  p:nth-child(2) {
+    font-style: italic;
+}
+.comment_div  p:nth-child(2)::before{
+    content: '"';
+    color: #056785;
+    font-size: 1.5rem;
+}
+.comment_div  p:nth-child(2)::after{
+    content: '"';
+    color: #056785;
+    font-size: 1.5rem;
+    display: inline-block;
+}

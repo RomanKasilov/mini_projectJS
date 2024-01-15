@@ -9,17 +9,17 @@ fetch(users_url)
         for (let user of value) {
             // console.log(user);
             let {id: userID,name: userName} = user;
-            let div = document.createElement('div');
+            let div = document.createElement('div');    //обгортка для User
             div.classList.add('user', 'flex','center');
-            // div.classList.add('flex');
-            // div.classList.add('center');
-            let id = document.createElement('div');
+
+            let id = document.createElement('div');     //User id
             id.classList.add('id','flex','center');
-            // id.classList.add('center');
             id.innerText = `${userID}`
-            let h2= document.createElement('h2');
+
+            let h2= document.createElement('h2');   //User name
             h2.innerText = `${userName}`
-            let btn= document.createElement('button');
+
+            let btn= document.createElement('button');  //button "details"
             btn.innerText = `Details`;
             btn.type = 'submit';
             btn.setAttribute('formtarget', "_blank");

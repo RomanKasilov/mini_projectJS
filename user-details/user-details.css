@@ -1,3 +1,131 @@
-#post_btn{}
-.wrapper{}
-.post{}
+body {
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+    letter-spacing: 2px;
+}
+
+.flex_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+/*User info block*/
+h1 {
+    border-top: 10px double #a49a99;
+    border-bottom: 10px double #a49a99;
+}
+
+.wrapper {
+
+    /*padding-left: 10vw;*/
+    /*    border: 3px solid black;*/
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    border: 10px outset #e4cecb;
+    box-sizing: border-box;
+    width: 90vw;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+span {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+/*<button>Posts of current user*/
+#post_btn {
+    width: 90vw;
+    height: 50px;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #18c0f3;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: #f3dad7;
+    background-image: linear-gradient(
+            to top left,
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2) 30%,
+            rgba(0, 0, 0, 0));
+    transition: 1s;
+}
+
+#post_btn:hover {
+    background-color: rgba(11, 177, 206, 0.6);
+    transition: 1s;
+}
+
+#post_btn:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+/**/
+.post_wrapper {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.post {
+    justify-content: space-between;
+    width: 18vw;
+    height: 20vh;
+    gap: 10px;
+    background-color: rgba(239, 120, 93, 0.8);
+    /*border-right: 5px solid rgb(11, 177, 206);*/
+    /*border-left: 5px solid rgb(11, 177, 206);*/
+    border: 5px solid rgb(11, 177, 206);
+    border-radius: 33px;
+}
+
+.title {
+    text-align: justify;
+    /*text-justify: auto;*/
+    padding: 10px;
+    height: 10vh;
+}
+
+.post button {
+    font-style: italic;
+    border: none;
+    background-color: rgb(11, 177, 206);
+    border-radius: 10px;
+    background-image: linear-gradient(
+            to top left,
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2) 30%,
+            rgba(0, 0, 0, 0));
+
+    width: 9vw;
+    margin-bottom: 10px;
+}
+.post button:hover {
+    background-color: rgba(11, 177, 206, 0.6);
+    transition: 1s;
+    cursor: pointer;
+}
+
+.post button:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+

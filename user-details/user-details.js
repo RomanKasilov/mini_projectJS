@@ -39,19 +39,23 @@ fetch(`https://jsonplaceholder.typicode.com/users/${user.id}/posts`)
     .then(res => res.json())
     .then(posts =>{
         console.log(posts);
+        let post_wrapper = document.createElement('div');
+        post_wrapper.classList.add('post_wrapper');
         for (let post of posts) {
             let div = document.createElement('div');
-            div.classList.add('post')
-            let p = document.createElement('p');
-            p.innerText = `${post.title}`;
+            div.classList.add('post','flex_center')
+            let title = document.createElement('div');
+            title.classList.add('title','flex_center');
+            title.innerText = `${post.title}`;
             let button = document.createElement('button');
             button.innerText = 'post-details';
             button.addEventListener('click', () =>{
                 // document.location.href = `../post-details/post-details.html?post=` + JSON.stringify(post);
                 window.open(`../post-details/post-details.html?post=` + JSON.stringify(post), '_blank')
             })
-            wrapper.appendChild(div);
-            div.append(p, button);
+            document.body.appendChild(post_wrapper);
+            post_wrapper.appendChild(div);
+            div.append(title, button);
             btn.style.display = "none";
         }
     })
