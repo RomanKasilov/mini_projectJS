@@ -1,12 +1,78 @@
-.flex{
+.flex {
     display: flex;
+}
+
+.center {
     justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.user {
+    position: relative;
+    width: 40vw;
+    height: 20vh;
+    border: 2px solid aqua;
+
+    transition: 1s;
+}
+
+.user:hover {
+    background-color: rgba(127, 217, 255, 0.5);
+    transition: 1s;
+}
+
+.id {
+    align-items: center;
+    font-weight: bold;
+
+    position: absolute;
+    top: 5px;
+    left: 5px;
+
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgba(5, 132, 154, 0.8);
+    border-radius: 100%;
 
 }
-.wrapper{}
-.user {
-    width: 40vw;
-    border: 2px solid aqua;
+
+h2 {
+    padding-bottom: 8vh;
+    font-size: 2rem;
 }
-p{}
-button{}
+
+button {
+    height: 5vh;
+    width: 20vw;
+    position: absolute;
+    bottom: 10px;
+    left: 10vw;
+
+    border: 0;
+    font-size: 1rem;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgb(11, 177, 206);
+    background-image: linear-gradient(
+            to top left,
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2) 30%,
+            rgba(0, 0, 0, 0));
+    transition: 1s;
+}
+
+button:hover {
+    background-color: rgba(11, 177, 206, 0.6);
+    transition: 1s;
+}
+
+button:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
