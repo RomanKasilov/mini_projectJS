@@ -1,46 +1,81 @@
-.wrapper{
-
+body {
+margin: 0;
 }
-.posts_wrapper{
+.wrapper{
+    padding: 15px;
+}
+/*h1 Post info*/
+h1{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: italic;
+    border-top: 10px double #a49a99;
+    border-bottom: 10px double #a49a99;
+    margin: 10px;
+}
+
+/*блок з інфо про post*/
+.posts_wrapper {
     border-bottom: 5px solid #18c0f3;
 }
-.post_div{
+/*розмальовка контенту post info*/
+.post_div p{
     font-size: 1.2rem;
+    list-style-type: none;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
 }
-.post_div span{
-    font-size: 1.5rem;
-    font-weight: bolder;
+p span {
+    margin-right: 5px;
+    font-family: "Paytone One", sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-decoration: underline;
 }
-
-.comments_wrapper{
+/* comments*/
+h2{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: italic;
+    border-bottom: 10px double #a49a99;
+    margin: 20px 10px;
+}
+/*обгортка для всіх comments*/
+.comments_wrapper {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     margin: 20px;
 }
+/*блок з коментарем*/
 .comment_div {
     padding: 15px;
-width: 20vw;
+    width: 17vw;
     border: 5px solid #056785;
-border-radius: 20px;
-    box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
-    -webkit-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.75);
+}
+/*розмальовка контенту comments */
+.comment_div p:nth-child(1) {
+    font-family: "Lemon", serif;
+    font-weight: 500;
 }
 
-.comment_div  p:nth-child(1) {
-    font-weight: bold;
+.comment_div p:nth-child(2) {
+    font-family: "Salsa", cursive;
+    /*font-style: italic;*/
 }
 
-.comment_div  p:nth-child(2) {
-    font-style: italic;
-}
-.comment_div  p:nth-child(2)::before{
+.comment_div p:nth-child(2)::before {
     content: '"';
     color: #056785;
     font-size: 1.5rem;
 }
-.comment_div  p:nth-child(2)::after{
+
+.comment_div p:nth-child(2)::after {
     content: '"';
     color: #056785;
     font-size: 1.5rem;

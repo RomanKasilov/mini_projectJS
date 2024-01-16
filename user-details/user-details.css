@@ -20,14 +20,16 @@ body {
 
 /*User info block*/
 h1 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: italic;
     border-top: 10px double #a49a99;
     border-bottom: 10px double #a49a99;
+    margin: 10px;
 }
 
+/*Обгортка з user info*/
 .wrapper {
-
-    /*padding-left: 10vw;*/
-    /*    border: 3px solid black;*/
     border-radius: 10px 10px 10px 10px;
     -webkit-border-radius: 10px 10px 10px 10px;
     -moz-border-radius: 10px 10px 10px 10px;
@@ -36,13 +38,21 @@ h1 {
     width: 90vw;
 }
 
-ul {
-    list-style-type: none;
+/*розмальовка списку*/
+.wrapper > ul > span {
+    text-decoration: underline;
 }
 
+ul {
+    list-style-type: none;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+}
 
 span {
-    font-weight: 600;
+    font-family: "Paytone One", sans-serif;
+    font-weight: 500;
     font-size: 1.2rem;
 }
 
@@ -75,7 +85,8 @@ span {
     inset 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
-/**/
+/* розмальовка post info*/
+/*Блок з постами*/
 .post_wrapper {
     justify-content: center;
     display: flex;
@@ -83,11 +94,11 @@ span {
     gap: 20px;
 
 }
-
+/*Обгортка для кожного посту*/
 .post {
     justify-content: space-between;
     width: 18vw;
-    height: 20vh;
+    height: 200px;
     gap: 10px;
     background-color: rgba(239, 120, 93, 0.8);
     /*border-right: 5px solid rgb(11, 177, 206);*/
@@ -95,16 +106,34 @@ span {
     border: 5px solid rgb(11, 177, 206);
     border-radius: 33px;
 }
-
+/* розмальовка post info*/
 .title {
     text-align: justify;
     /*text-justify: auto;*/
+    font-family: "Paytone One", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    font-style: normal;
     padding: 10px;
-    height: 10vh;
+    height: 150px;
 }
 
+.title::before {
+    content: " ";
+    background-image: url("https://img.icons8.com/ios-filled/50/quote.png");
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    margin-bottom: 10px;
+
+}
+/*кнопка Post details*/
 .post button {
-    font-style: italic;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    /*font-style: normal;*/
+    /*font-style: italic;*/
     border: none;
     background-color: rgb(11, 177, 206);
     border-radius: 10px;
@@ -114,9 +143,11 @@ span {
             rgba(0, 0, 0, 0.2) 30%,
             rgba(0, 0, 0, 0));
 
-    width: 9vw;
+    width: 14vw;
+    height: 30px;
     margin-bottom: 10px;
 }
+
 .post button:hover {
     background-color: rgba(11, 177, 206, 0.6);
     transition: 1s;

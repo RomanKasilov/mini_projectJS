@@ -41,6 +41,7 @@ fetch(`https://jsonplaceholder.typicode.com/users/${user.id}/posts`)
         console.log(posts);
         let post_wrapper = document.createElement('div');
         post_wrapper.classList.add('post_wrapper');
+        // ітеруємо масив з постами
         for (let post of posts) {
             let div = document.createElement('div');
             div.classList.add('post','flex_center')

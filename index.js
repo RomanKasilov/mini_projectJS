@@ -1,6 +1,6 @@
 let users_url = new URL('https://jsonplaceholder.typicode.com/users/');
 console.log(users_url);
-let wrapper = document.getElementsByClassName('wrapper')[0];
+let wrapper = document.getElementsByClassName('wrapper')[0]; // Div-обгортка
 console.log(wrapper);
 fetch(users_url)
     .then(value => value.json())
@@ -10,10 +10,10 @@ fetch(users_url)
             // console.log(user);
             let {id: userID,name: userName} = user;
             let div = document.createElement('div');    //обгортка для User
-            div.classList.add('user', 'flex','center');
+            div.classList.add('user', 'flex_center');
 
             let id = document.createElement('div');     //User id
-            id.classList.add('id','flex','center');
+            id.classList.add('id','flex_center');
             id.innerText = `${userID}`
 
             let h2= document.createElement('h2');   //User name
